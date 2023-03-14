@@ -27,14 +27,12 @@ function Menu() {
     if (openMenu) {
         return (
             <Container openMenu={openMenu}>
-                {
-                    items.map((valor) => (
-                        <MenuItem openMenu={openMenu} onClick={() => navegador(valor.link)}>
-                            <ButtonIcon alt="" src={valor.icon} />
-                            <span>{valor.descricao}</span>
-                        </MenuItem>
-                    ))
-                }
+                {items.map((valor) => (
+                    <MenuItem openMenu={openMenu} onClick={() => navegador(valor.link)}>
+                        <ButtonIcon alt="" src={valor.icon} />
+                        <span>{valor.descricao}</span>
+                    </MenuItem>
+                ))}
             </Container>
         )
     } else {
