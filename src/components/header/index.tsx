@@ -16,7 +16,7 @@ import MicIcon from '../../asserts/microfone-gravador.png'
 import VideoIcon from '../../asserts/video.png'
 import NotificationIcon from '../../asserts/sino.png'
 import { UsuarioContexto } from '../../contexts/useContext';
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 
 function Header() {
     const { openMenu, setOpenMenu } = useContext(UsuarioContexto);
