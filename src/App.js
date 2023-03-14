@@ -1,9 +1,10 @@
-import { useState } from "react";
+import React, { useContext } from 'react';
 import Header from "./components/header";
 import Menu from "./components/menu";
+import { UsuarioContexto } from './contexts/useContext';
 
 function App() {
-  const [openMenu, setOpenMenu] = useState(true);
+  const { openMenu, setOpenMenu } = useContext(UsuarioContexto);
 
   return (
     <div className="App">

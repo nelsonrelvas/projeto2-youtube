@@ -1,12 +1,12 @@
 import { Container, MenuItem } from "./styles";
+import React, { useContext } from 'react';
+import { UsuarioContexto } from '../../contexts/useContext';
 
 const items = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-interface IProps {
-    openMenu: boolean;
-}
+function Menu() {
+    const { openMenu } = useContext(UsuarioContexto);
 
-function Menu({ openMenu }: IProps) {
     return (
         <Container openMenu={openMenu}>
             {items.map(() => (

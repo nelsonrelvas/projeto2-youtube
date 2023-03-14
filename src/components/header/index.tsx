@@ -15,13 +15,12 @@ import SearchIcon from '../../asserts/search.png'
 import MicIcon from '../../asserts/microfone-gravador.png'
 import VideoIcon from '../../asserts/video.png'
 import NotificationIcon from '../../asserts/sino.png'
+import { UsuarioContexto } from '../../contexts/useContext';
+import React, { useContext } from 'react';
 
-interface IProps {
-    openMenu: boolean;
-    setOpenMenu: (openMenu: boolean) => void
-}
+function Header() {
+    const { openMenu, setOpenMenu } = useContext(UsuarioContexto);
 
-function Header({ openMenu, setOpenMenu }: IProps) {
     return (
         <Container>
             <LogoContainer>
