@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.header`
     width: 100%;
@@ -9,6 +9,8 @@ export const Container = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 `;
 
 export const LogoContainer = styled.div`
